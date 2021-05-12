@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+      <title>Our Gallery</title>
+  </head>
+  <body>
+ 
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 " >
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+            href="#"
+            >The Bobby Gallery</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded  block lg:hidden outline-none focus:outline-none"
+            type="button" onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        
+           
+            <a  href="#" class="inline-block p-2 text-white hover:text-white mr-2">Home</a>
+            <a href="#"  class="inline-block p-2 text-white hover:text-white">About</a>
+          
+        </div>
+        ><button
+                class="bg-black text-pink-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+        <svg class="w-10 color-white justify-center" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"  stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg></button>
+        
+      </div>
+    </nav>
+    
+    <main>
+      
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 95vh"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-top bg-cover"
+          style="
+            background-image: url('https://i.ibb.co/Jp9bRn4/gallery.jpg' );
+          "
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto" data-aos="fade-in">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div>
+                <h1 class="text-white font-semibold text-5xl">
+                    Welcome to  <span class="text-orange-500">Bobby Photograpy!</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+                    Capturing moments from today…Creating memories for a lifetime!
+                </p>
+                <a
+                  href="#"
+                  class="bg-transparent hover:bg-orange-500 text-white font-semibold hover:text-white p-4 border border-orange-500 hover:border-transparent rounded inline-block mt-5 cursor-pointer"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px; transform: translateZ(0px)"
+        >
+         
+        </div>
+      </div>
+
+   
+      <section id="about" class="relative py-20 bg-black text-white">
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div
+              class="w-full md:w-4/12 ml-auto mr-auto px-4"
+              data-aos="fade-right"
+            >
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="https://i.ibb.co/74d80VC/another.jpg" 
+              />
+            </div>
+            <div
+              class="w-full md:w-5/12 ml-auto mr-auto px-4"
+              data-aos="fade-left"
+            >
+              <div class="md:pr-12">
+                <small class="text-orange-500">About our Gallery</small>
+                <h3 class="text-4xl uppercase font-bold">Beautifull memories that last</h3>
+                <p class="mt-4 text-lg leading-relaxed">
+                    Art, like morality, consists of drawing the line somewhere.
+
+                    Artists who seek perfection in everything are those who cannot attain it in anything.
+                </p>
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="font-semibold inline-block py-3 mr-3 text-orange-500"
+                          ><i class="fas fa-dumbbell fa-2x"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-xl">
+                          Babies' Birthday
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="font-semibold inline-block py-3 mr-3 text-orange-500"
+                          ><i class="fas fa-hard-hat fa-2x"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-xl">
+                          Wedding and Anniversary
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="font-semibold inline-block py-3 mr-3 text-orange-500"
+                          ><i class="fas fa-users fa-2x"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-xl">Documentary films</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="pt-20 pb-48">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold uppercase">
+                Check out our work
+              </h2>
+              <p class="text-lg leading-relaxed m-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex flex-wrap     ">
+           
+            <div
+              class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
+              data-aos="flip-right"
+            >
+              <div class="px-6">
+                <img
+                  alt="..."
+                  src="https://i.ibb.co/qFbRbMd/baby.jpg" 
+                  class="shadow-lg rounded max-w-full mx-auto"
+                  style="max-width: 250px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Babies</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    The new baby born
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div
+              class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
+              data-aos="flip-right"
+            >
+              <div class="px-6">
+                <img
+                  alt="..."
+                  src="https://i.ibb.co/fHrcCGT/wedding-ceremony.jpg"
+                  class="shadow-lg rounded max-w-full mx-auto"
+                  style="max-width: 250px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Wedding Ceremonies</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Memories
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+            <div
+              class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
+              data-aos="flip-right"
+            >
+              <div class="px-6">
+                <img
+                  alt="..."
+                  src="https://i.ibb.co/P6GQZ8T/casual.png"
+                  class="shadow-lg rounded max-w-full mx-auto"
+                  style="max-width: 250px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Casual</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Casual pictures
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="pb-20 relative block bg-black text-white">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0px)"
+        >
+          
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 pb-20 pt-20">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-white uppercase">
+                Contact Us
+              </h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4">
+                Contact us to ask any questions, talk to
+                our team or anything else
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="relative block py-24 lg:pt-0 bg-black">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+            <div class="w-full lg:w-6/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                data-aos="fade-up-right"
+              >
+                <div class="flex-auto p-5 lg:p-10 bg-orange-500 text-white">
+                  <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                  <p class="leading-relaxed mt-1 mb-4">
+                    Complete this form and we will get back to you in 24 hours.
+                  </p>
+                  <div class="relative w-full mb-3 mt-8">
+                    <label
+                      class="block uppercase text-xs font-bold mb-2"
+                      for="full-name"
+                      >Full Name</label> <input type="text" class="px-3 py-3 placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Full Name"/>
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-xs font-bold mb-2"
+                      for="email"
+                      >Email</label
+                    ><input type="email"
+                      class="px-3 py-3 placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Email"/>
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label class="block uppercase text-xs font-bold mb-2" for="message"> Message</label > <textarea rows="4"  cols="80"
+                      class="px-3 py-3 placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Type a message..."></textarea>
+                  </div>
+                  <div class="text-center mt-6">
+                    <button class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      type="button">Send Message </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; " >
+        
+      </div>
+      <div class="container mx-auto px-4">
+        
+               <div class="mt-4">
+              <div class="flex flex-wrap overflow-hidden sm:-mx-4 md:-mx-px lg:-mx-6 xl:-mx-6">
+            
+                <div class="w-full overflow-hidden sm:my-1 sm:px-2 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-4 xl:px-4 xl:w-1/4 pb-6">
+                   
+                    <img style="max-width: 80%;height:auto;"  src="https://i.ibb.co/VW35xsw/images.png" alt="images">
+                </div>
+    
+                <div class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6 ">
+                       
+                    <h4 class="text-black">Important</h4>
+                    <ul class="nav navbar-nav">
+                        <li id="navi-2" class="leading-7 text-sm">
+                            <a class="text-black underline text-small" href="#">follow us </a>
+                        </li>
+                        <li id="navi-1" class="leading-7 text-sm"><a class="text-black underline text-small" href="#">Stay with us</a></li>
+                    </ul>
+    
+                 </div>
+    
+                <div class="w-full overflow-hidden sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
+                    
+                    <h4 class="text-black">Info</h4>
+                    <ul class="">
+                    <li id="navi-2" class="leading-7 text-sm">
+                        <a class="text-black underline text-small" href="#">Working days </a>
+                    </li>
+                    <li id="navi-1" class="leading-7 text-sm"><a class="text-black underline text-small" href="#"> visit us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
+                    
+    
+                    <h4 class="text-black">Products</h4>
+                    <ul class="">
+                    <li id="navi-2" class="leading-7 text-sm">
+                        <a class="text-black underline text-small" href="#">Photo shoot </a>
+                    </li>
+                    <li id="navi-1" class="leading-7 text-sm"><a class="text-black underline text-small" href="#">Videos</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+     
+          
+        
+        
+        
+      </div>
+    </footer>
+</body>
+</html>
